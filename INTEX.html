@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Devi Ji 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffffff);
+  text-align:center;
+  color:#333;
+}
+h1{
+  color:#e91e63;
+  margin-top:20px;
+  animation: fadeIn 2s;
+}
+.message{
+  padding:22px;
+  font-size:18px;
+  line-height:1.8;
+  animation: fadeIn 3s;
+}
+.slider{
+  max-width:90%;
+  margin:20px auto;
+  position:relative;
+}
+.slide{
+  display:none;
+}
+.slide img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.footer{
+  margin:30px 0;
+  font-weight:bold;
+  color:#e91e63;
+  animation: fadeIn 4s;
+}
+.heart{
+  position: fixed;
+  font-size:18px;
+  animation: float 6s linear;
+}
+@keyframes float{
+  0%{bottom:-10%; opacity:0;}
+  30%{opacity:1;}
+  100%{bottom:110%; opacity:0;}
+}
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<h1>💖 Meri Devi Ji 💖</h1>
+
+<div class="message">
+💖 <b>Devi ji</b> 💖<br><br>
+
+Pta h Duniya me sbse sundar kon h <br>
+<b>Meri Dharampatni ji Aap🧿</b> 😌<br><br>
+
+👀 Mujhe sabse zyada pasand hai<br>
+<b>aapko dekhte rhna </b><br>
+aur aapko <b>ek chhote bachhe jaise pyaar karna</b> 🧸❤️<br><br>
+
+Aur jab aap mujhe pyaar se samjhaati ho,<br>
+<b>“Rishu…”</b> keh kar 🥺<br>
+toh main to  ek <b>chhota sa bachha</b> ban jaata hoon 🤍<br><br>
+
+🌸 Aap duniya ki <b>sabse best wife</b> ho<br>
+aur <b>Rishu ki sab kuchh</b> 😌💞<br><br>
+
+🙏 Meri devi ji,<br>
+aap meri wife hi nahi,<br>
+meri sbkuchh , meri shanti<br>
+aur meri poori duniya ho 💫
+</div>
+
+<div class="slider">
+  <div class="slide"><img src="photo1.jpg"></div>
+  <div class="slide"><img src="photo2.jpg"></div>
+  <div class="slide"><img src="photo3.jpg"></div>
+  <div class="slide"><img src="photo4.jpg"></div>
+</div>
+
+<div class="footer">
+💍 Hamesha aapka<br>
+❤️ Rishu ❤️
+</div>
+
+<!-- MUSIC -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/6ZwwapPikyQ?autoplay=1&loop=1&playlist=6ZwwapPikyQ"
+allow="autoplay">
+</iframe>
+
+<script>
+let i=0;
+const slides=document.getElementsByClassName("slide");
+function showSlides(){
+  for(let s of slides){s.style.display="none";}
+  i++; if(i>slides.length){i=1;}
+  slides[i-1].style.display="block";
+  setTimeout(showSlides,3500);
+}
+showSlides();
+
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.innerHTML="💖";
+  h.className="heart";
+  h.style.left=Math.random()*100+"vw";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000);
+},900);
+</script>
+
+</body>
+</html>
